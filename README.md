@@ -1,0 +1,1 @@
+Template for starting new web projects.

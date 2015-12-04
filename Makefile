@@ -4,7 +4,11 @@ all: build/code.js build/libs.js build/index.html build/style.css
 
 watch:
 	make
-	fswatch-run src make
+	fswatch-run src "make changed"
+
+changed:
+	make
+	./reload
 
 node_modules: package.json
 	npm install
